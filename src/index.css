@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Urdu Typesetting', serif;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 8mm 8mm 8mm 8mm;
+}
+
+@media print {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    font-size: 11px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .print-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
+
+/* Diagonal Approved Stamp */
+.watermark-approved {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-20%, -50%) rotate(-30deg);
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(22, 163, 74, 0.22);
+  border: 8px solid rgba(22, 163, 74, 0.35);
+  border-radius: 16px;
+  padding: 12px 36px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 10;
+  user-select: none;
+}
+
+.watermark-draft {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-20%, -50%) rotate(-30deg);
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(217, 119, 6, 0.22);
+  border: 8px dashed rgba(217, 119, 6, 0.35);
+  border-radius: 16px;
+  padding: 12px 36px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  pointer-events: none;
+  z-index: 10;
+  user-select: none;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Ameer Hamza Travels & Tours - B2B Travel CRM & Voucher System",
+  "description": "Enterprise B2B Travel Agency CRM for Umrah & Hajj hotel vouchers, Nusuk/Excel passenger import, 6+ accommodation sectors, transport & flight logistics, agent ledgers, and QR verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
